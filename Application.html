@@ -7,10 +7,6 @@
         overflow: hidden;
         background: #1f242d;
     }
-
-    div::-webkit-scrollbar {
-        display: none;
-    }
 </style>
 
 <body>
@@ -22,6 +18,7 @@
             darkMode: true,
             appBarColored: true,
             themeColor: '#dc1b42',
+            overflow: 'hidden',
         };
         CloudPDF(config, document.getElementById('viewer')).then((instance) => {
 
