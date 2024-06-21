@@ -55,8 +55,18 @@
                 <a href="https://www.linkedin.com/in/galinnovations-gal-innovations-b31174310/
                 " target="_blank"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="/Bewerbung/Bewerbung Ausbildung.pdf" download="Bewerbung Ausbildung.pdf">
-                <div class="btn">Download Application.PDF</div>
+            <div id="viewer" style="width: 100%; height: 500px;"></div>
+            <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+            <script>
+                const config = {
+                    documentId: '7ff0d794-bed6-4cad-9a40-7827f4d533e9',
+                    darkMode: true,
+                };
+                CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+
+                });
+            </script>
+            <div class="btn">Download Application.PDF</div>
             </a>
 
         </div>
