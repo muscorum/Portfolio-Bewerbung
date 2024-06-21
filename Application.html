@@ -4,8 +4,12 @@
         height: 100vh;
         margin: 0;
         padding: 0;
-        overflow: hidden;
         background: #1f242d;
+    }
+</style>
+<style type="text/css">
+    #viewer {
+        overflow: hidden !important;
     }
 </style>
 
@@ -18,7 +22,6 @@
             darkMode: true,
             appBarColored: true,
             themeColor: '#dc1b42',
-            overflow: 'hidden',
         };
         CloudPDF(config, document.getElementById('viewer')).then((instance) => {
 
