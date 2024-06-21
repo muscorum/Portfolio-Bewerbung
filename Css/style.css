@@ -29,8 +29,14 @@ body {
     color: var(--text-color);
 }
 
+/* CHROME,SAFARI,OPERA  */
 html::-webkit-scrollbar {
     display: none;
+}
+
+/* FIREFOX */
+html {
+    scrollbar-width: none;
 }
 
 section {
